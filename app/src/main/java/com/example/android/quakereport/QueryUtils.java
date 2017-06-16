@@ -41,6 +41,8 @@ public final class QueryUtils {
      */
     public static ArrayList<EarthQuake> extractEarthquakes() {
 
+
+
         // Create an empty ArrayList that we can start adding earthquakes to
         ArrayList<EarthQuake> earthquakes = new ArrayList<>();
 
@@ -61,8 +63,14 @@ public final class QueryUtils {
                 Long date = properties.getLong("time");
 
                 String location = properties.getString("place");
-                EarthQuake earthquakesObj = new EarthQuake(location,mag,date);
+
+                // Extract the value for the key called "url"
+                String url = properties.getString("url");
+
+                EarthQuake earthquakesObj = new EarthQuake(location,mag,date, url);
                 earthquakes.add(earthquakesObj);
+
+
 
             }
 
@@ -77,6 +85,7 @@ public final class QueryUtils {
 
         // Return the list of earthquakes
         return earthquakes;
+
     }
 
 }

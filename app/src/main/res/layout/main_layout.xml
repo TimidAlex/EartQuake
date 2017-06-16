@@ -10,42 +10,72 @@
 
 
     <TextView
+        android:fontFamily="sans-serif-medium"
         android:id="@+id/mag"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/magnitude_circle"
         android:text="Magnitude" />
 
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
         <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:maxLines="1"
+            android:textColor="@color/textColorEarthquakeDetails"
             android:text="LocationOffset"
             android:id="@+id/locoff"
             android:layout_alignParentTop="true" />
     <TextView
-        android:layout_width="0dp"
-        android:layout_weight="1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="PrimaryLocation"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textSize="16sp"
+        android:textColor="@color/textColorEarthquakeLocation"
         android:id="@+id/primaryloc"
         android:layout_alignParentTop="true" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
     <TextView
         android:id="@+id/data"
-        android:layout_width="0dp"
-        android:layout_weight="1"
+        android:textSize="12sp"
+        android:gravity="end"
+        android:textColor="@color/textColorEarthquakeDetails"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Data" />
 
     <TextView
         android:id="@+id/time"
-        android:layout_width="0dp"
-        android:layout_weight="1"
+        android:gravity="end"
+        android:textSize="12sp"
+        android:textColor="@color/textColorEarthquakeDetails"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Time" />
-
-
-
-
-
 </LinearLayout>
+</LinearLayout>
+

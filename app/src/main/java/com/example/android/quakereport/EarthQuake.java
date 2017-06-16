@@ -10,15 +10,16 @@ public class EarthQuake {
     private String getCity;
     private String getData;
     private Long getMilliSec;
+    private String getURL;
 
 
 
-    public EarthQuake (String acity, Double amag,  long timeMillesec){
+    public EarthQuake (String acity, Double amag,  long timeMillesec, String URL){
 
         getMagnitude = amag;
         getCity = acity;
-
-    getMilliSec = timeMillesec;
+        getMilliSec = timeMillesec;
+        getURL = URL;
     }
 
 
@@ -26,6 +27,7 @@ public class EarthQuake {
     public Double getMagnitude () {return getMagnitude;}
     public String getCity () {return getCity;}
     public Long getMilliSec() {return  getMilliSec;}
+    public String getGetURL () {return getURL;}
 
 
 }
