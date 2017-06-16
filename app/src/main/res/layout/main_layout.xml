@@ -14,21 +14,38 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="Magnitude" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            android:id="@+id/city"
+            android:text="LocationOffset"
+            android:id="@+id/locoff"
             android:layout_alignParentTop="true" />
-
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="PrimaryLocation"
+        android:id="@+id/primaryloc"
+        android:layout_alignParentTop="true" />
     <TextView
         android:id="@+id/data"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="Data" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Time" />
+
+
+
+
 
 </LinearLayout>

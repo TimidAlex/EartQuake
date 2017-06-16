@@ -6,23 +6,26 @@ package com.example.android.quakereport;
 
 public class EarthQuake {
 
-    private String getMagnitude ;
+    private Double getMagnitude ;
     private String getCity;
     private String getData;
+    private Long getMilliSec;
 
 
 
-    public EarthQuake (String acity, String amag, String adata){
+    public EarthQuake (String acity, Double amag,  long timeMillesec){
 
         getMagnitude = amag;
         getCity = acity;
-        getData = adata;
 
+    getMilliSec = timeMillesec;
     }
 
-    public String getMagnitude () {return getMagnitude;}
+
+
+    public Double getMagnitude () {return getMagnitude;}
     public String getCity () {return getCity;}
-    public String getData () {return getData;}
+    public Long getMilliSec() {return  getMilliSec;}
 
 
 }
